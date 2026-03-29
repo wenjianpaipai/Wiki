@@ -108,5 +108,26 @@ date: "2025-05-26",
 title: "搜索引擎收录社区维基",
 description: "必应是个好东西。 "
 },
+{
+date: "2025-08-02",
+title: "新的物理机被采购",
+description: "CPU主频 4.0 GHz"
+},
+{
+date: "2025-08-04",
+title: "拟定分离原生存二服的多种玩法",
+description: "TPS过低。拟将生存二服分为 生电服 和 粘液科技第二生存服 。随后发起投票。"
+},
+{
+date: "2025-08-06",
+title: "生电服开启",
+description: "根据投票结果成立生电服，为新存档。原二服存档保留，禁用生电玩法，其他不变。"
+},
+{
+date: "2026-01-01",
+title: "2026 新年活动",
+description: "新年快乐！新的活动地图。",
+url: "https://www.bilibili.com/video/BV1YkiTBeEPB/?share_source=copy_web&vd_source=0c579ca481e99907fda9d05eb4ec333b"
+}
 ]}
 />

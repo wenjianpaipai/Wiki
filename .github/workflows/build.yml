@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - main
+  repository_dispatch:
+    types: [ update-t ]
+
 jobs:
   # 自动部署GitPage
   gitpage:
@@ -12,6 +15,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@master
       with:
+        submodules: recursive
         fetch-depth: 0
     # 编译出静态页面
     - name: Install and Build

@@ -1,0 +1,3 @@
+[submodule "admin/theory-of-community"]
+	path = admin/theory-of-community
+	url = https://github.com/pingguomc/theory-of-community.git

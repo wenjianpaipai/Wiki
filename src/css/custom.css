@@ -11,14 +11,14 @@
 /* ===== 2. 配色系统 ===== */
 :root {
   /* 主色系 */
-  --primary: #e65c4f;
-  --primary-dark: #d14a3c;
+  --primary: #c53e2f;
+  --primary-dark: #b03d2f;
   --primary-light: #f08a7f;
 
   /* 平衡色系 */
   --balance-1: #2d3b45;
   --balance-2: #3d5a6c;
-  --balance-3: #5c6b73;
+  --balance-3: #4a5b6b;
   --balance-4: #e9ecef;
 
   /* 功能色 */
@@ -29,7 +29,7 @@
   /* 文本系统 */
   --text-primary: var(--balance-1);
   --text-secondary: var(--balance-3);
-  --text-light: #8d99ae;
+  --text-light: #6c757d;
 
   /* 背景系统 */
   --bg-page: #fcfcfa;
@@ -86,6 +86,11 @@ html[data-theme='dark'] {
   --ifm-background-surface-color: var(--bg-container);
   --ifm-border-color: var(--border-light);
   --docusaurus-highlighted-code-line-bg: rgba(230, 92, 79, 0.12);
+
+  .button--primary:hover {
+    color: #ffe5e0;
+  }
+
 }
 
 /* ===== 3. 基础布局 ===== */
@@ -281,8 +286,7 @@ body {
 }
 
 .card__body {
-  padding: 0;
-  padding-top: 0.5rem;
+  padding: 0.5rem 0 0;
 }
 
 .card h2 {
@@ -347,7 +351,7 @@ body {
 
 .button--secondary {
   background-color: var(--bg-alt);
-  color: var(--balance-2);
+  color: var(--text-primary);
   border: 1px solid var(--border-medium);
 }
 
@@ -463,7 +467,7 @@ article p {
 
 /* 链接样式 */
 article a {
-  color: var(--balance-2);
+  color: var(--primary);
   font-weight: 500;
   text-decoration: none;
   transition: color var(--transition-normal);
@@ -488,6 +492,8 @@ article a:after {
 
 article a:hover:after {
   transform: scaleX(1);
+  bottom: -2px;
+  height: 2px;
 }
 
 /* ===== 9. 代码块 ===== */
@@ -651,14 +657,14 @@ html[data-theme='dark'] .alert--success {
 html[data-theme='dark'] .alert--warning {
   border-left-color: #fbbf24;
   background-color: #422006;
-  color: #fde68a;
+  color: #fef3c7;
 }
-
 html[data-theme='dark'] .alert--danger {
   border-left-color: #f87171;
   background-color: #450a0a;
-  color: #fecaca;
+  color: #fecdd3;
 }
+
 /* ===== 13. 页脚 ===== */
 .footer {
   background-color: var(--bg-alt);
